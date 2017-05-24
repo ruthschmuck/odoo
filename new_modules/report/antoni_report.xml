@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-	<data>
-		<report
-			id="antoni_report"
-			string="Antoni"
-			model="sale.order"
-			report_type="qweb-pdf"
-            file="new_module.report_saleorder" 
+    <data>
+        <report
+            id="antoni_report"
+            string="Antoni"
+            model="sale.order"
+            report_type="qweb-pdf"
+            file="new_module.report_saleorder"
             name="sale.report_saleorder"
-		/>
-	</data>
-</odoo> 
-<!-- name is for py, file for xml -->
+        />
+    </data>
+</odoo>
