@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-<template id="report_saleorder_document">
+<template id="antoni_report_saleorder_document">
     <t t-call="report.external_layout">
         <t t-set="doc" t-value="doc.with_context({'lang':doc.partner_id.lang})" />
         <div class="page">
@@ -31,7 +31,7 @@
                 <span t-field="doc.name"/>
             </h2>
 
-            <div class="row mt32 mb32" id="informations">
+            <div class="row mt32 mb32" id="antoni_informations">
                 <div t-if="doc.client_order_ref" class="col-xs-3">
                     <strong>Your Reference:</strong>
                     <p t-field="doc.client_order_ref"/>
@@ -158,7 +158,7 @@
             <p t-if="doc.payment_term_id.note">
                 <span t-field="doc.payment_term_id.note"/>
             </p>
-            <p id="fiscal_position_remark" t-if="doc.fiscal_position_id and doc.fiscal_position_id.note">
+            <p id="antoni_fiscal_position_remark" t-if="doc.fiscal_position_id and doc.fiscal_position_id.note">
                 <strong>Fiscal Position Remark:</strong>
                 <span t-field="doc.fiscal_position_id.note"/>
             </p>
@@ -168,10 +168,10 @@
 </template>
 
 
-<template id="report_saleorder">
+<template id="antoni_report_saleorder">
     <t t-call="report.html_container">
         <t t-foreach="docs" t-as="doc">
-            <t t-call="sale.report_saleorder_document" t-lang="doc.partner_id.lang"/>
+            <t t-call="new_module.antoni_report_saleorder_document" t-lang="doc.partner_id.lang"/>
         </t>
     </t>
 </template>

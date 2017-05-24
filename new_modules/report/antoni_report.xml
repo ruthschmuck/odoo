@@ -6,7 +6,7 @@
 			string="Antoni"
 			model="sale.order"
 			report_type="qweb-pdf"
-            file="new_module.report_saleorder" 
+            file="new_module.antoni_report_saleorder" 
             name="sale.report_saleorder"
 		/>
 	</data>
