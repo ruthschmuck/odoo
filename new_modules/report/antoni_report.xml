@@ -6,9 +6,9 @@
 			string="Antoni"
 			model="sale.order"
 			report_type="qweb-pdf"
-            file="sale.report_saleorder" 
-            name="new_module.report_saleorder"
+            file="new_module.report_saleorder" 
+            name="sale.report_saleorder"
 		/>
 	</data>
 </odoo> 
-<!-- name is for xml, file for py -->
+<!-- name is for py, file for xml -->
