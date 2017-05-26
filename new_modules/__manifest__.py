@@ -10,6 +10,7 @@
     'author': 'Antoni Ruth',
     'depends': ['sale'],
     'data': [
+        'views/new_button_print.xml',
         'report/antoni_report.xml',
         'report/antoni_report_templates.xml',
     ],
