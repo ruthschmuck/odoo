@@ -7,4 +7,4 @@ class print2(models.Model):
     @api.multi
     def my_button(self):
         self.write({'state': "sent"})
-        return self.env['report'].get_action(self, 'my_module.antoni_report_saleorder')
+        return self.env['report'].get_action(self, 'new_modules.antoni_report_saleorder')
