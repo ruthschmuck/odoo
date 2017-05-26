@@ -2,7 +2,7 @@
 from odoo import models, fields, api
 
 class print2(models.Moldel):
-    _inherit = "purchase.order"
+    _inherit = "sale.order"
 
     @api.multi
     def my_button(self):
